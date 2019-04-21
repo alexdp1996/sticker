@@ -10,7 +10,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { StickersComponent } from './stickers/stickers.component';
 import { StickerDetailComponent } from './sticker-detail/sticker-detail.component';
 import { AddStickerComponent } from './add-sticker/add-sticker.component';
-import { StickerSearchComponent } from './sticker-search/sticker-search.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +17,7 @@ import { StickerSearchComponent } from './sticker-search/sticker-search.componen
     StickersComponent,
     StickerDetailComponent,
     DashboardComponent,
-    AddStickerComponent,
-    StickerSearchComponent
+    AddStickerComponent
   ],
   imports: [
     BrowserModule,

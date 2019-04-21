@@ -1,4 +1,6 @@
 <h2>List</h2>
+
+<label>Name filter</label><input [(ngModel)]="term" (input)="search()" />
 <table class = "table table-bordered">
   <tr>
     <th>ID</th>
@@ -7,7 +9,7 @@
     <th>Modified</th>
     <th></th>
   </tr>
-    <tr *ngFor="let sticker of stickers">
+    <tr *ngFor="let sticker of stickers$ | async" >
       <td>
         <span class="badge">{{sticker.id}}</span>
       </td>

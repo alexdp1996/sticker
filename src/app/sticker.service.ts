@@ -40,10 +40,7 @@ export class StickerService {
   }
 
   searchStickers(term: string): Observable<Sticker[]> {
-    if (!term.trim()) 
-      return of([]);
-    else
-      return this.http.get<Sticker[]>(`${this.dbUrl}/?name=${term}`);
+    return this.http.get<Sticker[]>(`${this.dbUrl}/?name=${term}`);
   }
 }
 
