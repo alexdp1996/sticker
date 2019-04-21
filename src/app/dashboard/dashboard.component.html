@@ -1,0 +1,12 @@
+<h2>Dashboard</h2>
+<div class="grid grid-pad">
+  <a *ngFor="let sticker of stickers" class="col-1-4"
+      routerLink="/detail/{{sticker.id}}">
+    <div class="module sticker">
+      <h4>{{sticker.name}}</h4>
+    </div>
+  </a>
+</div>
+
+<div class="row"></div>
+<app-sticker-search></app-sticker-search>
